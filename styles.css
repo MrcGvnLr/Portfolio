@@ -1712,6 +1712,24 @@ align-content:center;
 
 
 /*RESPONSIVE*/
+@media(max-width: 992px){
+.profile-container{
+    width: clamp(200px, 40vw, 250px);
+    height: clamp(200px, 40vw, 250px);
+}
+
+.profile{
+    width: 400px;
+    height:400px;
+    
+    display:block;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+}
+
 @media(max-width:  768px){
 
 header{
@@ -1753,13 +1771,13 @@ nav a{
 }
 
 h1{
-    font-size: clamp(1.8rem, 6vw, 2.5rem);
+    font-size: 2.5rem;
 }
 h2{
-    font-size: clamp(1.2rem, 4vw, 1.5rem);
+    font-size: 1.5rem;
 }
 p{
-    font-size: clamp(0.9rem, 3vw, 1.1rem);
+    font-size: 1.1rem;
 } 
 .btn{
     padding: clamp(10px, 3vw, 12px) clamp(20px, 5vw, 25px);
@@ -1778,6 +1796,7 @@ p{
     width: clamp(40px, 10vw, 50px);
     height: clamp(40px, 10vw, 50px);
     font-size: clamp(1rem, 3vw, 1.3rem);
+    margin-bottom:30%;
 }
 
 .profile-container{
@@ -1786,8 +1805,8 @@ p{
 }
 
 .profile{
-    width: 450px;
-    height:450px;
+    width: 160%;
+    height:160%;
     
     display:block;
     top: 130%;
